@@ -1,0 +1,1477 @@
+2025-01-26 19:33:14.177 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: e2e4
+2025-01-26 19:33:14.198 | INFO     | __main__:step:52 - White's move: e2e4 => Score: 36
+2025-01-26 19:33:14.299 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: c7c5
+
+Final Board Position:
+r n b q k b n r
+p p . p p p p p
+. . . . . . . .
+. . p . . . . .
+. . . . P . . .
+. . . . . . . .
+P P P P . P P P
+R N B Q K B N R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:33:14.299 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: g1h3,g1f3,g1e2,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,d1h5,d1g4,d1f3,d1e2,b1c3,b1a3,e4e5,h2h3,g2g3,f2f3,d2d3,c2c3,b2b3,a2a3,h2h4,g2g4,f2f4,d2d4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:33:33.652 | INFO     | __main__:get_action:142 - response: <UCI>=g1f3
+2025-01-26 19:33:33.652 | INFO     | __main__:get_action:146 - Extracted move: g1f3
+<re.Match object; span=(0, 4), match='g1f3'>
+2025-01-26 19:33:33.652 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: g1f3
+2025-01-26 19:33:33.672 | INFO     | __main__:step:52 - White's move: g1f3 => Score: 32
+2025-01-26 19:33:33.772 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: d7d6
+
+Final Board Position:
+r n b q k b n r
+p p . . p p p p
+. . . p . . . .
+. . p . . . . .
+. . . . P . . .
+. . . . . N . .
+P P P P . P P P
+R N B Q K B . R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:33:33.772 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: f3g5,f3e5,f3h4,f3d4,f3g1,h1g1,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,d1e2,b1c3,b1a3,e4e5,h2h3,g2g3,d2d3,c2c3,b2b3,a2a3,h2h4,g2g4,d2d4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:33:42.991 | INFO     | __main__:get_action:142 - response: <UCI>=d2d4
+2025-01-26 19:33:42.991 | INFO     | __main__:get_action:146 - Extracted move: d2d4
+<re.Match object; span=(0, 4), match='d2d4'>
+2025-01-26 19:33:42.991 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: d2d4
+2025-01-26 19:33:43.017 | INFO     | __main__:step:52 - White's move: d2d4 => Score: 39
+2025-01-26 19:33:43.117 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: c5d4
+
+Final Board Position:
+r n b q k b n r
+p p . . p p p p
+. . . p . . . .
+. . . . . . . .
+. . . p P . . .
+. . . . . N . .
+P P P . . P P P
+R N B Q K B . R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:33:43.118 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: f3g5,f3e5,f3h4,f3d4,f3d2,f3g1,h1g1,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,e1d2,d1d4,d1d3,d1e2,d1d2,c1h6,c1g5,c1f4,c1e3,c1d2,b1c3,b1a3,b1d2,e4e5,h2h3,g2g3,c2c3,b2b3,a2a3,h2h4,g2g4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:33:52.861 | INFO     | __main__:get_action:142 - response: <UCI>=f3d4
+2025-01-26 19:33:52.861 | INFO     | __main__:get_action:146 - Extracted move: f3d4
+<re.Match object; span=(0, 4), match='f3d4'>
+2025-01-26 19:33:52.861 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: f3d4
+2025-01-26 19:33:52.886 | INFO     | __main__:step:52 - White's move: f3d4 => Score: 40
+2025-01-26 19:33:52.987 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: g8f6
+
+Final Board Position:
+r n b q k b . r
+p p . . p p p p
+. . . p . n . .
+. . . . . . . .
+. . . N P . . .
+. . . . . . . .
+P P P . . P P P
+R N B Q K B . R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:33:52.987 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: d4e6,d4c6,d4f5,d4b5,d4f3,d4b3,d4e2,h1g1,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,e1d2,d1h5,d1g4,d1f3,d1d3,d1e2,d1d2,c1h6,c1g5,c1f4,c1e3,c1d2,b1c3,b1a3,b1d2,e4e5,h2h3,g2g3,f2f3,c2c3,b2b3,a2a3,h2h4,g2g4,f2f4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:34:19.107 | INFO     | __main__:get_action:142 - response: <UCI>=b1c3
+2025-01-26 19:34:19.108 | INFO     | __main__:get_action:146 - Extracted move: b1c3
+<re.Match object; span=(0, 4), match='b1c3'>
+2025-01-26 19:34:19.108 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: b1c3
+2025-01-26 19:34:19.127 | INFO     | __main__:step:52 - White's move: b1c3 => Score: 49
+2025-01-26 19:34:19.228 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: a7a6
+
+Final Board Position:
+r n b q k b . r
+. p . . p p p p
+p . . p . n . .
+. . . . . . . .
+. . . N P . . .
+. . N . . . . .
+P P P . . P P P
+R . B Q K B . R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:34:19.229 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: d4e6,d4c6,d4f5,d4b5,d4f3,d4b3,d4e2,c3d5,c3b5,c3a4,c3e2,c3b1,h1g1,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,e1d2,d1h5,d1g4,d1f3,d1d3,d1e2,d1d2,c1h6,c1g5,c1f4,c1e3,c1d2,a1b1,e4e5,h2h3,g2g3,f2f3,b2b3,a2a3,h2h4,g2g4,f2f4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:36:08.915 | INFO     | __main__:get_action:142 - response: <UCI>=c1g5
+2025-01-26 19:36:08.915 | INFO     | __main__:get_action:146 - Extracted move: c1g5
+<re.Match object; span=(0, 4), match='c1g5'>
+2025-01-26 19:36:08.915 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: c1g5
+2025-01-26 19:36:08.921 | INFO     | __main__:step:52 - White's move: c1g5 => Score: 47
+2025-01-26 19:36:09.022 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: b8d7
+
+Final Board Position:
+r . b q k b . r
+. p . n p p p p
+p . . p . n . .
+. . . . . . B .
+. . . N P . . .
+. . N . . . . .
+P P P . . P P P
+R . . Q K B . R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:36:09.023 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: g5h6,g5f6,g5h4,g5f4,g5e3,g5d2,g5c1,d4e6,d4c6,d4f5,d4b5,d4f3,d4b3,d4e2,c3d5,c3b5,c3a4,c3e2,c3b1,h1g1,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,e1d2,d1h5,d1g4,d1f3,d1d3,d1e2,d1d2,d1c1,d1b1,a1c1,a1b1,e4e5,h2h3,g2g3,f2f3,b2b3,a2a3,h2h4,g2g4,f2f4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:37:11.839 | INFO     | __main__:get_action:142 - response: <UCI>=d4e6
+2025-01-26 19:37:11.839 | INFO     | __main__:get_action:146 - Extracted move: d4e6
+<re.Match object; span=(0, 4), match='d4e6'>
+2025-01-26 19:37:11.839 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: d4e6
+2025-01-26 19:37:11.844 | INFO     | __main__:step:52 - White's move: d4e6 => Score: -384
+2025-01-26 19:37:11.945 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: f7e6
+
+Final Board Position:
+r . b q k b . r
+. p . n p . p p
+p . . p p n . .
+. . . . . . B .
+. . . . P . . .
+. . N . . . . .
+P P P . . P P P
+R . . Q K B . R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:37:11.945 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: g5h6,g5f6,g5h4,g5f4,g5e3,g5d2,g5c1,c3d5,c3b5,c3a4,c3e2,c3b1,h1g1,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,e1d2,d1d6,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,d1c1,d1b1,a1c1,a1b1,e4e5,h2h3,g2g3,f2f3,b2b3,a2a3,h2h4,g2g4,f2f4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:39:12.811 | INFO     | __main__:get_action:142 - response: <UCI>=g5f6
+2025-01-26 19:39:12.811 | INFO     | __main__:get_action:146 - Extracted move: g5f6
+<re.Match object; span=(0, 4), match='g5f6'>
+2025-01-26 19:39:12.811 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: g5f6
+2025-01-26 19:39:12.816 | INFO     | __main__:step:52 - White's move: g5f6 => Score: -475
+2025-01-26 19:39:12.916 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: e7f6
+
+Final Board Position:
+r . b q k b . r
+. p . n . . p p
+p . . p p p . .
+. . . . . . . .
+. . . . P . . .
+. . N . . . . .
+P P P . . P P P
+R . . Q K B . R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:39:12.916 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: c3d5,c3b5,c3a4,c3e2,c3b1,h1g1,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,e1d2,d1d6,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,d1c1,d1b1,a1c1,a1b1,e4e5,h2h3,g2g3,f2f3,b2b3,a2a3,h2h4,g2g4,f2f4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:40:42.300 | INFO     | __main__:get_action:142 - response: <UCI>=f1c4
+2025-01-26 19:40:42.301 | INFO     | __main__:get_action:146 - Extracted move: f1c4
+<re.Match object; span=(0, 4), match='f1c4'>
+2025-01-26 19:40:42.301 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: f1c4
+2025-01-26 19:40:42.312 | INFO     | __main__:step:52 - White's move: f1c4 => Score: -415
+2025-01-26 19:40:42.414 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: d8e7
+
+Final Board Position:
+r . b . k b . r
+. p . n q . p p
+p . . p p p . .
+. . . . . . . .
+. . B . P . . .
+. . N . . . . .
+P P P . . P P P
+R . . Q K . . R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:40:42.414 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: c4e6,c4a6,c4d5,c4b5,c4d3,c4b3,c4e2,c4f1,c3d5,c3b5,c3a4,c3e2,c3b1,h1g1,h1f1,e1e2,e1d2,e1f1,d1d6,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,d1c1,d1b1,a1c1,a1b1,e1g1,e4e5,h2h3,g2g3,f2f3,b2b3,a2a3,h2h4,g2g4,f2f4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:41:19.597 | INFO     | __main__:get_action:142 - response: <UCI>=e1g1
+2025-01-26 19:41:19.598 | INFO     | __main__:get_action:146 - Extracted move: e1g1
+<re.Match object; span=(0, 4), match='e1g1'>
+2025-01-26 19:41:19.598 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: e1g1
+2025-01-26 19:41:19.602 | INFO     | __main__:step:52 - White's move: e1g1 => Score: -430
+2025-01-26 19:41:19.703 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: b7b5
+
+Final Board Position:
+r . b . k b . r
+. . . n q . p p
+p . . p p p . .
+. p . . . . . .
+. . B . P . . .
+. . N . . . . .
+P P P . . P P P
+R . . Q . R K .
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:41:19.703 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: c4e6,c4d5,c4b5,c4d3,c4b3,c4e2,c3d5,c3b5,c3a4,c3e2,c3b1,g1h1,f1e1,d1d6,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,d1e1,d1c1,d1b1,a1c1,a1b1,e4e5,h2h3,g2g3,f2f3,b2b3,a2a3,h2h4,g2g4,f2f4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:42:03.610 | INFO     | __main__:get_action:142 - response: <UCI>=c4b3
+2025-01-26 19:42:03.611 | INFO     | __main__:get_action:146 - Extracted move: c4b3
+<re.Match object; span=(0, 4), match='c4b3'>
+2025-01-26 19:42:03.611 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: c4b3
+2025-01-26 19:42:03.617 | INFO     | __main__:step:52 - White's move: c4b3 => Score: -459
+2025-01-26 19:42:03.718 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: c8b7
+
+Final Board Position:
+r . . . k b . r
+. b . n q . p p
+p . . p p p . .
+. p . . . . . .
+. . . . P . . .
+. B N . . . . .
+P P P . . P P P
+R . . Q . R K .
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:42:03.718 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: c3d5,c3b5,c3a4,c3e2,c3b1,b3e6,b3d5,b3c4,b3a4,g1h1,f1e1,d1d6,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,d1e1,d1c1,d1b1,a1c1,a1b1,e4e5,h2h3,g2g3,f2f3,a2a3,h2h4,g2g4,f2f4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+You: c4b3 (score=-459)
+Opponent: c8b7
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:44:11.996 | INFO     | __main__:get_action:142 - response: <UCI>=c3d5
+2025-01-26 19:44:11.996 | INFO     | __main__:get_action:146 - Extracted move: c3d5
+<re.Match object; span=(0, 4), match='c3d5'>
+2025-01-26 19:44:11.996 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: c3d5
+2025-01-26 19:44:12.003 | INFO     | __main__:step:52 - White's move: c3d5 => Score: -408
+2025-01-26 19:44:12.104 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: e6d5
+
+Final Board Position:
+r . . . k b . r
+. b . n q . p p
+p . . p . p . .
+. p . p . . . .
+. . . . P . . .
+. B . . . . . .
+P P P . . P P P
+R . . Q . R K .
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:44:12.104 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: b3d5,b3c4,b3a4,g1h1,f1e1,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,d1e1,d1c1,d1b1,a1c1,a1b1,e4d5,e4e5,h2h3,g2g3,f2f3,c2c3,a2a3,h2h4,g2g4,f2f4,c2c4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+You: c4b3 (score=-459)
+Opponent: c8b7
+You: c3d5 (score=-408)
+Opponent: e6d5
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:45:01.790 | INFO     | __main__:get_action:142 - response: <UCI>=d1e2
+2025-01-26 19:45:01.791 | INFO     | __main__:get_action:146 - Extracted move: d1e2
+<re.Match object; span=(0, 4), match='d1e2'>
+2025-01-26 19:45:01.791 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: d1e2
+2025-01-26 19:45:01.794 | INFO     | __main__:step:52 - White's move: d1e2 => Score: -796
+2025-01-26 19:45:01.895 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: d7c5
+
+Final Board Position:
+r . . . k b . r
+. b . . q . p p
+p . . p . p . .
+. p n p . . . .
+. . . . P . . .
+. B . . . . . .
+P P P . Q P P P
+R . . . . R K .
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:45:01.895 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: b3d5,b3c4,b3a4,e2h5,e2b5,e2g4,e2c4,e2f3,e2e3,e2d3,e2d2,e2e1,e2d1,g1h1,f1e1,f1d1,f1c1,f1b1,a1e1,a1d1,a1c1,a1b1,e4d5,e4e5,h2h3,g2g3,f2f3,c2c3,a2a3,h2h4,g2g4,f2f4,c2c4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+You: c4b3 (score=-459)
+Opponent: c8b7
+You: c3d5 (score=-408)
+Opponent: e6d5
+You: d1e2 (score=-796)
+Opponent: d7c5
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:47:24.233 | INFO     | __main__:get_action:142 - response: <UCI>=b3a4
+2025-01-26 19:47:24.233 | INFO     | __main__:get_action:146 - Extracted move: b3a4
+<re.Match object; span=(0, 4), match='b3a4'>
+2025-01-26 19:47:24.233 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: b3a4
+2025-01-26 19:47:24.237 | INFO     | __main__:step:52 - White's move: b3a4 => Score: -1008
+2025-01-26 19:47:24.337 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: b5a4
+
+Final Board Position:
+r . . . k b . r
+. b . . q . p p
+p . . p . p . .
+. . n p . . . .
+p . . . P . . .
+. . . . . . . .
+P P P . Q P P P
+R . . . . R K .
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:47:24.338 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: e2a6,e2h5,e2b5,e2g4,e2c4,e2f3,e2e3,e2d3,e2d2,e2e1,e2d1,g1h1,f1e1,f1d1,f1c1,f1b1,a1e1,a1d1,a1c1,a1b1,e4d5,e4e5,h2h3,g2g3,f2f3,c2c3,b2b3,a2a3,h2h4,g2g4,f2f4,c2c4,b2b4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+You: c4b3 (score=-459)
+Opponent: c8b7
+You: c3d5 (score=-408)
+Opponent: e6d5
+You: d1e2 (score=-796)
+Opponent: d7c5
+You: b3a4 (score=-1008)
+Opponent: b5a4
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:48:25.791 | INFO     | __main__:get_action:142 - response: <UCI>=a2a3
+2025-01-26 19:48:25.791 | INFO     | __main__:get_action:146 - Extracted move: a2a3
+<re.Match object; span=(0, 4), match='a2a3'>
+2025-01-26 19:48:25.791 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: a2a3
+2025-01-26 19:48:25.795 | INFO     | __main__:step:52 - White's move: a2a3 => Score: -978
+2025-01-26 19:48:25.895 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: d5e4
+
+Final Board Position:
+r . . . k b . r
+. b . . q . p p
+p . . p . p . .
+. . n . . . . .
+p . . . p . . .
+P . . . . . . .
+. P P . Q P P P
+R . . . . R K .
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:48:25.896 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: e2a6,e2h5,e2b5,e2g4,e2e4,e2c4,e2f3,e2e3,e2d3,e2d2,e2e1,e2d1,g1h1,f1e1,f1d1,f1c1,f1b1,a1a2,a1e1,a1d1,a1c1,a1b1,h2h3,g2g3,f2f3,c2c3,b2b3,h2h4,g2g4,f2f4,c2c4,b2b4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+You: c4b3 (score=-459)
+Opponent: c8b7
+You: c3d5 (score=-408)
+Opponent: e6d5
+You: d1e2 (score=-796)
+Opponent: d7c5
+You: b3a4 (score=-1008)
+Opponent: b5a4
+You: a2a3 (score=-978)
+Opponent: d5e4
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:50:22.058 | INFO     | __main__:get_action:142 - response: <UCI>=f2f3
+2025-01-26 19:50:22.058 | INFO     | __main__:get_action:146 - Extracted move: f2f3
+<re.Match object; span=(0, 4), match='f2f3'>
+2025-01-26 19:50:22.059 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: f2f3
+2025-01-26 19:50:22.062 | INFO     | __main__:step:52 - White's move: f2f3 => Score: -1063
+2025-01-26 19:50:22.163 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: c5d7
+
+Final Board Position:
+r . . . k b . r
+. b . n q . p p
+p . . p . p . .
+. . . . . . . .
+p . . . p . . .
+P . . . . P . .
+. P P . Q . P P
+R . . . . R K .
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:50:22.163 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: e2a6,e2b5,e2e4,e2c4,e2e3,e2d3,e2f2,e2d2,e2e1,e2d1,g1f2,g1h1,f1f2,f1e1,f1d1,f1c1,f1b1,a1a2,a1e1,a1d1,a1c1,a1b1,f3e4,f3f4,h2h3,g2g3,c2c3,b2b3,h2h4,g2g4,c2c4,b2b4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+You: c4b3 (score=-459)
+Opponent: c8b7
+You: c3d5 (score=-408)
+Opponent: e6d5
+You: d1e2 (score=-796)
+Opponent: d7c5
+You: b3a4 (score=-1008)
+Opponent: b5a4
+You: a2a3 (score=-978)
+Opponent: d5e4
+You: f2f3 (score=-1063)
+Opponent: c5d7
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:51:37.432 | INFO     | __main__:get_action:142 - response: <UCI>=f3e4
+2025-01-26 19:51:37.432 | INFO     | __main__:get_action:146 - Extracted move: f3e4
+<re.Match object; span=(0, 4), match='f3e4'>
+2025-01-26 19:51:37.432 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: f3e4
+2025-01-26 19:51:37.436 | INFO     | __main__:step:52 - White's move: f3e4 => Score: -914
+2025-01-26 19:51:37.538 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: h7h5
+
+Final Board Position:
+r . . . k b . r
+. b . n q . p .
+p . . p . p . .
+. . . . . . . p
+p . . . P . . .
+P . . . . . . .
+. P P . Q . P P
+R . . . . R K .
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:51:37.538 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: e2a6,e2h5,e2b5,e2g4,e2c4,e2f3,e2e3,e2d3,e2f2,e2d2,e2e1,e2d1,g1f2,g1h1,f1f6,f1f5,f1f4,f1f3,f1f2,f1e1,f1d1,f1c1,f1b1,a1a2,a1e1,a1d1,a1c1,a1b1,e4e5,h2h3,g2g3,c2c3,b2b3,h2h4,g2g4,c2c4,b2b4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+You: c4b3 (score=-459)
+Opponent: c8b7
+You: c3d5 (score=-408)
+Opponent: e6d5
+You: d1e2 (score=-796)
+Opponent: d7c5
+You: b3a4 (score=-1008)
+Opponent: b5a4
+You: a2a3 (score=-978)
+Opponent: d5e4
+You: f2f3 (score=-1063)
+Opponent: c5d7
+You: f3e4 (score=-914)
+Opponent: h7h5
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:53:21.241 | INFO     | __main__:get_action:142 - response: <UCI>=e4e5
+2025-01-26 19:53:21.241 | INFO     | __main__:get_action:146 - Extracted move: e4e5
+<re.Match object; span=(0, 4), match='e4e5'>
+2025-01-26 19:53:21.241 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: e4e5
+2025-01-26 19:53:21.245 | INFO     | __main__:step:52 - White's move: e4e5 => Score: -975
+2025-01-26 19:53:21.346 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: d6e5
+
+Final Board Position:
+r . . . k b . r
+. b . n q . p .
+p . . . . p . .
+. . . . p . . p
+p . . . . . . .
+P . . . . . . .
+. P P . Q . P P
+R . . . . R K .
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:53:21.346 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: e2a6,e2h5,e2e5,e2b5,e2g4,e2e4,e2c4,e2f3,e2e3,e2d3,e2f2,e2d2,e2e1,e2d1,g1f2,g1h1,f1f6,f1f5,f1f4,f1f3,f1f2,f1e1,f1d1,f1c1,f1b1,a1a2,a1e1,a1d1,a1c1,a1b1,h2h3,g2g3,c2c3,b2b3,h2h4,g2g4,c2c4,b2b4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+You: c4b3 (score=-459)
+Opponent: c8b7
+You: c3d5 (score=-408)
+Opponent: e6d5
+You: d1e2 (score=-796)
+Opponent: d7c5
+You: b3a4 (score=-1008)
+Opponent: b5a4
+You: a2a3 (score=-978)
+Opponent: d5e4
+You: f2f3 (score=-1063)
+Opponent: c5d7
+You: f3e4 (score=-914)
+Opponent: h7h5
+You: e4e5 (score=-975)
+Opponent: d6e5
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:55:09.290 | INFO     | __main__:get_action:142 - response: <UCI>=e2e5
+2025-01-26 19:55:09.291 | INFO     | __main__:get_action:146 - Extracted move: e2e5
+<re.Match object; span=(0, 4), match='e2e5'>
+2025-01-26 19:55:09.291 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: e2e5
+2025-01-26 19:55:09.294 | INFO     | __main__:step:52 - White's move: e2e5 => Score: -1213
+2025-01-26 19:55:09.394 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: d7e5
+
+Final Board Position:
+r . . . k b . r
+. b . . q . p .
+p . . . . p . .
+. . . . n . . p
+p . . . . . . .
+P . . . . . . .
+. P P . . . P P
+R . . . . R K .
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:55:09.395 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: g1f2,g1h1,f1f6,f1f5,f1f4,f1f3,f1f2,f1e1,f1d1,f1c1,f1b1,a1a2,a1e1,a1d1,a1c1,a1b1,h2h3,g2g3,c2c3,b2b3,h2h4,g2g4,c2c4,b2b4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+You: c4b3 (score=-459)
+Opponent: c8b7
+You: c3d5 (score=-408)
+Opponent: e6d5
+You: d1e2 (score=-796)
+Opponent: d7c5
+You: b3a4 (score=-1008)
+Opponent: b5a4
+You: a2a3 (score=-978)
+Opponent: d5e4
+You: f2f3 (score=-1063)
+Opponent: c5d7
+You: f3e4 (score=-914)
+Opponent: h7h5
+You: e4e5 (score=-975)
+Opponent: d6e5
+You: e2e5 (score=-1213)
+Opponent: d7e5
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:56:18.988 | INFO     | __main__:get_action:142 - response: <UCI>=h2h3
+2025-01-26 19:56:18.988 | INFO     | __main__:get_action:146 - Extracted move: h2h3
+<re.Match object; span=(0, 4), match='h2h3'>
+2025-01-26 19:56:18.988 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: h2h3
+2025-01-26 19:56:18.991 | INFO     | __main__:step:52 - White's move: h2h3 => Score: -1344
+2025-01-26 19:56:19.092 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: e7c5
+
+Final Board Position:
+r . . . k b . r
+. b . . . . p .
+p . . . . p . .
+. . q . n . . p
+p . . . . . . .
+P . . . . . . P
+. P P . . . P .
+R . . . . R K .
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:56:19.093 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: g1h2,g1h1,f1f2
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+You: c4b3 (score=-459)
+Opponent: c8b7
+You: c3d5 (score=-408)
+Opponent: e6d5
+You: d1e2 (score=-796)
+Opponent: d7c5
+You: b3a4 (score=-1008)
+Opponent: b5a4
+You: a2a3 (score=-978)
+Opponent: d5e4
+You: f2f3 (score=-1063)
+Opponent: c5d7
+You: f3e4 (score=-914)
+Opponent: h7h5
+You: e4e5 (score=-975)
+Opponent: d6e5
+You: e2e5 (score=-1213)
+Opponent: d7e5
+You: h2h3 (score=-1344)
+Opponent: e7c5
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:57:20.048 | INFO     | __main__:get_action:142 - response: <UCI>=g1h1
+2025-01-26 19:57:20.048 | INFO     | __main__:get_action:146 - Extracted move: g1h1
+<re.Match object; span=(0, 4), match='g1h1'>
+2025-01-26 19:57:20.048 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: g1h1
+2025-01-26 19:57:20.052 | INFO     | __main__:step:52 - White's move: g1h1 => Score: Mate in -7
+2025-01-26 19:57:20.153 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: c5e3
+
+Final Board Position:
+r . . . k b . r
+. b . . . . p .
+p . . . . p . .
+. . . . n . . p
+p . . . . . . .
+P . . . q . . P
+. P P . . . P .
+R . . . . R . K
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:57:20.153 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: h1h2,f1f6,f1f5,f1f4,f1f3,f1f2,f1g1,f1e1,f1d1,f1c1,f1b1,a1a2,a1e1,a1d1,a1c1,a1b1,h3h4,c2c3,b2b3,c2c4,b2b4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+You: c4b3 (score=-459)
+Opponent: c8b7
+You: c3d5 (score=-408)
+Opponent: e6d5
+You: d1e2 (score=-796)
+Opponent: d7c5
+You: b3a4 (score=-1008)
+Opponent: b5a4
+You: a2a3 (score=-978)
+Opponent: d5e4
+You: f2f3 (score=-1063)
+Opponent: c5d7
+You: f3e4 (score=-914)
+Opponent: h7h5
+You: e4e5 (score=-975)
+Opponent: d6e5
+You: e2e5 (score=-1213)
+Opponent: d7e5
+You: h2h3 (score=-1344)
+Opponent: e7c5
+You: g1h1 (score=Mate in -7)
+Opponent: c5e3
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:58:09.375 | INFO     | __main__:get_action:142 - response: <UCI>=f1f3
+2025-01-26 19:58:09.375 | INFO     | __main__:get_action:146 - Extracted move: f1f3
+<re.Match object; span=(0, 4), match='f1f3'>
+2025-01-26 19:58:09.375 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: f1f3
+2025-01-26 19:58:09.380 | INFO     | __main__:step:52 - White's move: f1f3 => Score: Mate in -5
+2025-01-26 19:58:09.480 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: b7f3
+
+Final Board Position:
+r . . . k b . r
+. . . . . . p .
+p . . . . p . .
+. . . . n . . p
+p . . . . . . .
+P . . . q b . P
+. P P . . . P .
+R . . . . . . K
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:58:09.480 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: h1h2,a1a2,a1g1,a1f1,a1e1,a1d1,a1c1,a1b1,g2f3,h3h4,c2c3,b2b3,c2c4,b2b4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+You: c4b3 (score=-459)
+Opponent: c8b7
+You: c3d5 (score=-408)
+Opponent: e6d5
+You: d1e2 (score=-796)
+Opponent: d7c5
+You: b3a4 (score=-1008)
+Opponent: b5a4
+You: a2a3 (score=-978)
+Opponent: d5e4
+You: f2f3 (score=-1063)
+Opponent: c5d7
+You: f3e4 (score=-914)
+Opponent: h7h5
+You: e4e5 (score=-975)
+Opponent: d6e5
+You: e2e5 (score=-1213)
+Opponent: d7e5
+You: h2h3 (score=-1344)
+Opponent: e7c5
+You: g1h1 (score=Mate in -7)
+Opponent: c5e3
+You: f1f3 (score=Mate in -5)
+Opponent: b7f3
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:58:42.085 | INFO     | __main__:get_action:142 - response: <UCI>=g2f3
+2025-01-26 19:58:42.085 | INFO     | __main__:get_action:146 - Extracted move: g2f3
+<re.Match object; span=(0, 4), match='g2f3'>
+2025-01-26 19:58:42.085 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: g2f3
+2025-01-26 19:58:42.090 | INFO     | __main__:step:52 - White's move: g2f3 => Score: Mate in -4
+2025-01-26 19:58:42.192 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: e3f3
+
+Final Board Position:
+r . . . k b . r
+. . . . . . p .
+p . . . . p . .
+. . . . n . . p
+p . . . . . . .
+P . . . . q . P
+. P P . . . . .
+R . . . . . . K
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:58:42.192 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: h1h2,h1g1
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+You: c4b3 (score=-459)
+Opponent: c8b7
+You: c3d5 (score=-408)
+Opponent: e6d5
+You: d1e2 (score=-796)
+Opponent: d7c5
+You: b3a4 (score=-1008)
+Opponent: b5a4
+You: a2a3 (score=-978)
+Opponent: d5e4
+You: f2f3 (score=-1063)
+Opponent: c5d7
+You: f3e4 (score=-914)
+Opponent: h7h5
+You: e4e5 (score=-975)
+Opponent: d6e5
+You: e2e5 (score=-1213)
+Opponent: d7e5
+You: h2h3 (score=-1344)
+Opponent: e7c5
+You: g1h1 (score=Mate in -7)
+Opponent: c5e3
+You: f1f3 (score=Mate in -5)
+Opponent: b7f3
+You: g2f3 (score=Mate in -4)
+Opponent: e3f3
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 19:59:36.521 | INFO     | __main__:get_action:142 - response: <UCI>=h1h2
+2025-01-26 19:59:36.521 | INFO     | __main__:get_action:146 - Extracted move: h1h2
+<re.Match object; span=(0, 4), match='h1h2'>
+2025-01-26 19:59:36.521 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: h1h2
+2025-01-26 19:59:36.525 | INFO     | __main__:step:52 - White's move: h1h2 => Score: Mate in -3
+2025-01-26 19:59:36.612 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: e5g4
+
+Final Board Position:
+r . . . k b . r
+. . . . . . p .
+p . . . . p . .
+. . . . . . . p
+p . . . . . n .
+P . . . . q . P
+. P P . . . . K
+R . . . . . . .
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 19:59:36.612 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: h2g1,h3g4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+You: c4b3 (score=-459)
+Opponent: c8b7
+You: c3d5 (score=-408)
+Opponent: e6d5
+You: d1e2 (score=-796)
+Opponent: d7c5
+You: b3a4 (score=-1008)
+Opponent: b5a4
+You: a2a3 (score=-978)
+Opponent: d5e4
+You: f2f3 (score=-1063)
+Opponent: c5d7
+You: f3e4 (score=-914)
+Opponent: h7h5
+You: e4e5 (score=-975)
+Opponent: d6e5
+You: e2e5 (score=-1213)
+Opponent: d7e5
+You: h2h3 (score=-1344)
+Opponent: e7c5
+You: g1h1 (score=Mate in -7)
+Opponent: c5e3
+You: f1f3 (score=Mate in -5)
+Opponent: b7f3
+You: g2f3 (score=Mate in -4)
+Opponent: e3f3
+You: h1h2 (score=Mate in -3)
+Opponent: e5g4
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:00:22.755 | INFO     | __main__:get_action:142 - response: <UCI>=h3g4
+2025-01-26 20:00:22.755 | INFO     | __main__:get_action:146 - Extracted move: h3g4
+<re.Match object; span=(0, 4), match='h3g4'>
+2025-01-26 20:00:22.755 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: h3g4
+2025-01-26 20:00:22.759 | INFO     | __main__:step:52 - White's move: h3g4 => Score: Mate in -2
+2025-01-26 20:00:22.766 | INFO     | __main__:play_game_llm_vs_stockfish:182 - black_move: h5g4
+
+Final Board Position:
+r . . . k b . r
+. . . . . . p .
+p . . . . p . .
+. . . . . . . .
+p . . . . . p .
+P . . . . q . .
+. P P . . . . K
+R . . . . . . .
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 20:00:22.766 | INFO     | __main__:get_action:115 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory and moves should score max int positive manner.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: h2g1
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=32)
+Opponent: d7d6
+You: d2d4 (score=39)
+Opponent: c5d4
+You: f3d4 (score=40)
+Opponent: g8f6
+You: b1c3 (score=49)
+Opponent: a7a6
+You: c1g5 (score=47)
+Opponent: b8d7
+You: d4e6 (score=-384)
+Opponent: f7e6
+You: g5f6 (score=-475)
+Opponent: e7f6
+You: f1c4 (score=-415)
+Opponent: d8e7
+You: e1g1 (score=-430)
+Opponent: b7b5
+You: c4b3 (score=-459)
+Opponent: c8b7
+You: c3d5 (score=-408)
+Opponent: e6d5
+You: d1e2 (score=-796)
+Opponent: d7c5
+You: b3a4 (score=-1008)
+Opponent: b5a4
+You: a2a3 (score=-978)
+Opponent: d5e4
+You: f2f3 (score=-1063)
+Opponent: c5d7
+You: f3e4 (score=-914)
+Opponent: h7h5
+You: e4e5 (score=-975)
+Opponent: d6e5
+You: e2e5 (score=-1213)
+Opponent: d7e5
+You: h2h3 (score=-1344)
+Opponent: e7c5
+You: g1h1 (score=Mate in -7)
+Opponent: c5e3
+You: f1f3 (score=Mate in -5)
+Opponent: b7f3
+You: g2f3 (score=Mate in -4)
+Opponent: e3f3
+You: h1h2 (score=Mate in -3)
+Opponent: e5g4
+You: h3g4 (score=Mate in -2)
+Opponent: h5g4
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:01:47.027 | INFO     | __main__:get_action:142 - response: <UCI>=h2g1
+2025-01-26 20:01:47.027 | INFO     | __main__:get_action:146 - Extracted move: h2g1
+<re.Match object; span=(0, 4), match='h2g1'>
+2025-01-26 20:01:47.027 | INFO     | __main__:play_game_llm_vs_stockfish:174 - white_move: h2g1
+2025-01-26 20:01:47.029 | INFO     | __main__:step:52 - White's move: h2g1 => Score: Mate in -1

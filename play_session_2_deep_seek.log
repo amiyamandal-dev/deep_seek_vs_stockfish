@@ -1,0 +1,1823 @@
+➜  chess_rl git:(main) ✗ python chess_engine.py                                                                                                                                                                                                                                                                  conda:pychan
+2025-01-26 20:17:07.260 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: e2e4
+2025-01-26 20:17:07.281 | INFO     | __main__:step:52 - White's move: e2e4 => Score: 36
+2025-01-26 20:17:07.381 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: c7c5
+2025-01-26 20:17:07.381 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:17:07.381 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r n b q k b n r
+p p . p p p p p
+. . . . . . . .
+. . p . . . . .
+. . . . P . . .
+. . . . . . . .
+P P P P . P P P
+R N B Q K B N R
+2025-01-26 20:17:07.381 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:17:07.382 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:17:07.382 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: g1h3,g1f3,g1e2,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,d1h5,d1g4,d1f3,d1e2,b1c3,b1a3,e4e5,h2h3,g2g3,f2f3,d2d3,c2c3,b2b3,a2a3,h2h4,g2g4,f2f4,d2d4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:17:30.428 | INFO     | __main__:get_action:150 - response: <UCI>=g1f3
+2025-01-26 20:17:30.428 | INFO     | __main__:get_action:154 - Extracted move: g1f3
+<re.Match object; span=(0, 4), match='g1f3'>
+2025-01-26 20:17:30.428 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: g1f3
+2025-01-26 20:17:30.440 | INFO     | __main__:step:52 - White's move: g1f3 => Score: 31
+2025-01-26 20:17:30.540 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: b8c6
+2025-01-26 20:17:30.540 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:17:30.540 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r . b q k b n r
+p p . p p p p p
+. . n . . . . .
+. . p . . . . .
+. . . . P . . .
+. . . . . N . .
+P P P P . P P P
+R N B Q K B . R
+2025-01-26 20:17:30.540 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:17:30.540 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:17:30.540 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: f3g5,f3e5,f3h4,f3d4,f3g1,h1g1,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,d1e2,b1c3,b1a3,e4e5,h2h3,g2g3,d2d3,c2c3,b2b3,a2a3,h2h4,g2g4,d2d4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:17:58.854 | INFO     | __main__:get_action:150 - response: <UCI>=d2d4
+2025-01-26 20:17:58.854 | INFO     | __main__:get_action:154 - Extracted move: d2d4
+<re.Match object; span=(0, 4), match='d2d4'>
+2025-01-26 20:17:58.854 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: d2d4
+2025-01-26 20:17:58.882 | INFO     | __main__:step:52 - White's move: d2d4 => Score: 17
+2025-01-26 20:17:58.983 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: c5d4
+2025-01-26 20:17:58.983 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:17:58.983 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r . b q k b n r
+p p . p p p p p
+. . n . . . . .
+. . . . . . . .
+. . . p P . . .
+. . . . . N . .
+P P P . . P P P
+R N B Q K B . R
+2025-01-26 20:17:58.983 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:17:58.983 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:17:58.983 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: f3g5,f3e5,f3h4,f3d4,f3d2,f3g1,h1g1,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,e1d2,d1d4,d1d3,d1e2,d1d2,c1h6,c1g5,c1f4,c1e3,c1d2,b1c3,b1a3,b1d2,e4e5,h2h3,g2g3,c2c3,b2b3,a2a3,h2h4,g2g4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:18:47.512 | INFO     | __main__:get_action:150 - response: <UCI>=f3d4
+2025-01-26 20:18:47.512 | INFO     | __main__:get_action:154 - Extracted move: f3d4
+<re.Match object; span=(0, 4), match='f3d4'>
+2025-01-26 20:18:47.513 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: f3d4
+2025-01-26 20:18:47.533 | INFO     | __main__:step:52 - White's move: f3d4 => Score: 36
+2025-01-26 20:18:47.634 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: e7e5
+2025-01-26 20:18:47.634 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:18:47.634 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r . b q k b n r
+p p . p . p p p
+. . n . . . . .
+. . . . p . . .
+. . . N P . . .
+. . . . . . . .
+P P P . . P P P
+R N B Q K B . R
+2025-01-26 20:18:47.634 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:18:47.634 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:18:47.634 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: d4e6,d4c6,d4f5,d4b5,d4f3,d4b3,d4e2,h1g1,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,e1d2,d1h5,d1g4,d1f3,d1d3,d1e2,d1d2,c1h6,c1g5,c1f4,c1e3,c1d2,b1c3,b1a3,b1d2,h2h3,g2g3,f2f3,c2c3,b2b3,a2a3,h2h4,g2g4,f2f4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:19:44.127 | INFO     | __main__:get_action:150 - response: <UCI>=d4b5
+2025-01-26 20:19:44.128 | INFO     | __main__:get_action:154 - Extracted move: d4b5
+<re.Match object; span=(0, 4), match='d4b5'>
+2025-01-26 20:19:44.128 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: d4b5
+2025-01-26 20:19:44.138 | INFO     | __main__:step:52 - White's move: d4b5 => Score: 10
+2025-01-26 20:19:44.239 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: d7d6
+2025-01-26 20:19:44.239 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:19:44.239 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r . b q k b n r
+p p . . . p p p
+. . n p . . . .
+. N . . p . . .
+. . . . P . . .
+. . . . . . . .
+P P P . . P P P
+R N B Q K B . R
+2025-01-26 20:19:44.239 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:19:44.239 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:19:44.239 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: b5c7,b5a7,b5d6,b5d4,b5c3,b5a3,h1g1,f1c4,f1d3,f1e2,e1e2,e1d2,d1d6,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,c1h6,c1g5,c1f4,c1e3,c1d2,b1c3,b1a3,b1d2,h2h3,g2g3,f2f3,c2c3,b2b3,a2a3,h2h4,g2g4,f2f4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:21:19.060 | INFO     | __main__:get_action:150 - response: <UCI>=b5c7
+2025-01-26 20:21:19.060 | INFO     | __main__:get_action:154 - Extracted move: b5c7
+<re.Match object; span=(0, 4), match='b5c7'>
+2025-01-26 20:21:19.060 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: b5c7
+2025-01-26 20:21:19.069 | INFO     | __main__:step:52 - White's move: b5c7 => Score: -451
+2025-01-26 20:21:19.170 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: d8c7
+2025-01-26 20:21:19.171 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:21:19.171 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r . b . k b n r
+p p q . . p p p
+. . n p . . . .
+. . . . p . . .
+. . . . P . . .
+. . . . . . . .
+P P P . . P P P
+R N B Q K B . R
+2025-01-26 20:21:19.171 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:21:19.171 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:21:19.171 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: h1g1,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,e1d2,d1d6,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,c1h6,c1g5,c1f4,c1e3,c1d2,b1c3,b1a3,b1d2,h2h3,g2g3,f2f3,c2c3,b2b3,a2a3,h2h4,g2g4,f2f4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:22:46.968 | INFO     | __main__:get_action:150 - response: <UCI>=f1c4
+2025-01-26 20:22:46.968 | INFO     | __main__:get_action:154 - Extracted move: f1c4
+<re.Match object; span=(0, 4), match='f1c4'>
+2025-01-26 20:22:46.968 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: f1c4
+2025-01-26 20:22:46.976 | INFO     | __main__:step:52 - White's move: f1c4 => Score: -553
+2025-01-26 20:22:47.077 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: c8e6
+2025-01-26 20:22:47.077 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:22:47.077 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r . . . k b n r
+p p q . . p p p
+. . n p b . . .
+. . . . p . . .
+. . B . P . . .
+. . . . . . . .
+P P P . . P P P
+R N B Q K . . R
+2025-01-26 20:22:47.077 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:22:47.077 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:22:47.077 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: c4e6,c4a6,c4d5,c4b5,c4d3,c4b3,c4e2,c4f1,h1g1,h1f1,e1e2,e1d2,e1f1,d1d6,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,c1h6,c1g5,c1f4,c1e3,c1d2,b1c3,b1a3,b1d2,e1g1,h2h3,g2g3,f2f3,c2c3,b2b3,a2a3,h2h4,g2g4,f2f4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:24:42.168 | INFO     | __main__:get_action:150 - response: <UCI>=c4b3
+2025-01-26 20:24:42.169 | INFO     | __main__:get_action:154 - Extracted move: c4b3
+<re.Match object; span=(0, 4), match='c4b3'>
+2025-01-26 20:24:42.169 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: c4b3
+2025-01-26 20:24:42.178 | INFO     | __main__:step:52 - White's move: c4b3 => Score: -519
+2025-01-26 20:24:42.280 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: g8f6
+2025-01-26 20:24:42.280 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:24:42.280 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r . . . k b . r
+p p q . . p p p
+. . n p b n . .
+. . . . p . . .
+. . . . P . . .
+. B . . . . . .
+P P P . . P P P
+R N B Q K . . R
+2025-01-26 20:24:42.280 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:24:42.280 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:24:42.280 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: b3e6,b3d5,b3c4,b3a4,h1g1,h1f1,e1e2,e1d2,e1f1,d1d6,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,c1h6,c1g5,c1f4,c1e3,c1d2,b1c3,b1a3,b1d2,e1g1,h2h3,g2g3,f2f3,c2c3,a2a3,h2h4,g2g4,f2f4,c2c4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:26:00.624 | INFO     | __main__:get_action:150 - response: <UCI>=e1g1
+2025-01-26 20:26:00.625 | INFO     | __main__:get_action:154 - Extracted move: e1g1
+<re.Match object; span=(0, 4), match='e1g1'>
+2025-01-26 20:26:00.625 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: e1g1
+2025-01-26 20:26:00.633 | INFO     | __main__:step:52 - White's move: e1g1 => Score: -516
+2025-01-26 20:26:00.734 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: f6e4
+2025-01-26 20:26:00.734 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:26:00.734 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r . . . k b . r
+p p q . . p p p
+. . n p b . . .
+. . . . p . . .
+. . . . n . . .
+. B . . . . . .
+P P P . . P P P
+R N B Q . R K .
+2025-01-26 20:26:00.734 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:26:00.734 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:26:00.734 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: b3e6,b3d5,b3c4,b3a4,g1h1,f1e1,d1d6,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,d1e1,c1h6,c1g5,c1f4,c1e3,c1d2,b1c3,b1a3,b1d2,h2h3,g2g3,f2f3,c2c3,a2a3,h2h4,g2g4,f2f4,c2c4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:27:28.787 | INFO     | __main__:get_action:150 - response: <UCI>=b3e6
+2025-01-26 20:27:28.787 | INFO     | __main__:get_action:154 - Extracted move: b3e6
+<re.Match object; span=(0, 4), match='b3e6'>
+2025-01-26 20:27:28.788 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: b3e6
+2025-01-26 20:27:28.803 | INFO     | __main__:step:52 - White's move: b3e6 => Score: -513
+2025-01-26 20:27:28.903 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: f7e6
+2025-01-26 20:27:28.904 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:27:28.904 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r . . . k b . r
+p p q . . . p p
+. . n p p . . .
+. . . . p . . .
+. . . . n . . .
+. . . . . . . .
+P P P . . P P P
+R N B Q . R K .
+2025-01-26 20:27:28.904 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:27:28.904 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:27:28.904 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: g1h1,f1e1,d1d6,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,d1e1,c1h6,c1g5,c1f4,c1e3,c1d2,b1c3,b1a3,b1d2,h2h3,g2g3,f2f3,c2c3,b2b3,a2a3,h2h4,g2g4,f2f4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:29:30.802 | INFO     | __main__:get_action:150 - response: <UCI>=b1c3
+2025-01-26 20:29:30.803 | INFO     | __main__:get_action:154 - Extracted move: b1c3
+<re.Match object; span=(0, 4), match='b1c3'>
+2025-01-26 20:29:30.803 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: b1c3
+2025-01-26 20:29:30.810 | INFO     | __main__:step:52 - White's move: b1c3 => Score: -524
+2025-01-26 20:29:30.911 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: e4c3
+2025-01-26 20:29:30.911 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:29:30.911 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r . . . k b . r
+p p q . . . p p
+. . n p p . . .
+. . . . p . . .
+. . . . . . . .
+. . n . . . . .
+P P P . . P P P
+R . B Q . R K .
+2025-01-26 20:29:30.911 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:29:30.911 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:29:30.911 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: g1h1,f1e1,d1d6,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,d1e1,c1h6,c1g5,c1f4,c1e3,c1d2,a1b1,b2c3,h2h3,g2g3,f2f3,b2b3,a2a3,h2h4,g2g4,f2f4,b2b4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:30:01.525 | INFO     | __main__:get_action:150 - response: <UCI>=b2c3
+2025-01-26 20:30:01.525 | INFO     | __main__:get_action:154 - Extracted move: b2c3
+<re.Match object; span=(0, 4), match='b2c3'>
+2025-01-26 20:30:01.525 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: b2c3
+2025-01-26 20:30:01.535 | INFO     | __main__:step:52 - White's move: b2c3 => Score: -524
+2025-01-26 20:30:01.636 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: f8e7
+2025-01-26 20:30:01.636 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:30:01.636 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r . . . k . . r
+p p q . b . p p
+. . n p p . . .
+. . . . p . . .
+. . . . . . . .
+. . P . . . . .
+P . P . . P P P
+R . B Q . R K .
+2025-01-26 20:30:01.636 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:30:01.636 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:30:01.636 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: g1h1,f1e1,d1d6,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,d1e1,c1h6,c1g5,c1f4,c1e3,c1a3,c1d2,c1b2,a1b1,c3c4,h2h3,g2g3,f2f3,a2a3,h2h4,g2g4,f2f4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+You: b2c3 (score=-524)
+Opponent: f8e7
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:32:29.158 | INFO     | __main__:get_action:150 - response: <UCI>=c1g5
+2025-01-26 20:32:29.158 | INFO     | __main__:get_action:154 - Extracted move: c1g5
+<re.Match object; span=(0, 4), match='c1g5'>
+2025-01-26 20:32:29.159 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: c1g5
+2025-01-26 20:32:29.166 | INFO     | __main__:step:52 - White's move: c1g5 => Score: -650
+2025-01-26 20:32:29.267 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: e7g5
+2025-01-26 20:32:29.268 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:32:29.268 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r . . . k . . r
+p p q . . . p p
+. . n p p . . .
+. . . . p . b .
+. . . . . . . .
+. . P . . . . .
+P . P . . P P P
+R . . Q . R K .
+2025-01-26 20:32:29.268 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:32:29.268 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:32:29.268 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: g1h1,f1e1,d1d6,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,d1e1,d1c1,d1b1,a1c1,a1b1,c3c4,h2h3,g2g3,f2f3,a2a3,h2h4,g2g4,f2f4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+You: b2c3 (score=-524)
+Opponent: f8e7
+You: c1g5 (score=-650)
+Opponent: e7g5
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:34:29.300 | INFO     | __main__:get_action:150 - response: <UCI>=h2h4
+2025-01-26 20:34:29.301 | INFO     | __main__:get_action:154 - Extracted move: h2h4
+<re.Match object; span=(0, 4), match='h2h4'>
+2025-01-26 20:34:29.301 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: h2h4
+2025-01-26 20:34:29.306 | INFO     | __main__:step:52 - White's move: h2h4 => Score: -865
+2025-01-26 20:34:29.406 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: g5h6
+2025-01-26 20:34:29.406 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:34:29.406 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r . . . k . . r
+p p q . . . p p
+. . n p p . . b
+. . . . p . . .
+. . . . . . . P
+. . P . . . . .
+P . P . . P P .
+R . . Q . R K .
+2025-01-26 20:34:29.406 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:34:29.406 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:34:29.406 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: g1h2,g1h1,f1e1,d1d6,d1h5,d1d5,d1g4,d1d4,d1f3,d1d3,d1e2,d1d2,d1e1,d1c1,d1b1,a1c1,a1b1,h4h5,c3c4,g2g3,f2f3,a2a3,g2g4,f2f4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+You: b2c3 (score=-524)
+Opponent: f8e7
+You: c1g5 (score=-650)
+Opponent: e7g5
+You: h2h4 (score=-865)
+Opponent: g5h6
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:35:45.276 | INFO     | __main__:get_action:150 - response: <UCI>=d1h5
+2025-01-26 20:35:45.277 | INFO     | __main__:get_action:154 - Extracted move: d1h5
+<re.Match object; span=(0, 4), match='d1h5'>
+2025-01-26 20:35:45.277 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: d1h5
+2025-01-26 20:35:45.285 | INFO     | __main__:step:52 - White's move: d1h5 => Score: -826
+2025-01-26 20:35:45.386 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: c7f7
+2025-01-26 20:35:45.386 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:35:45.386 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r . . . k . . r
+p p . . . q p p
+. . n p p . . b
+. . . . p . . Q
+. . . . . . . P
+. . P . . . . .
+P . P . . P P .
+R . . . . R K .
+2025-01-26 20:35:45.386 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:35:45.386 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:35:45.386 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: h5f7,h5h6,h5g6,h5g5,h5f5,h5e5,h5g4,h5f3,h5e2,h5d1,g1h2,g1h1,f1e1,f1d1,f1c1,f1b1,a1e1,a1d1,a1c1,a1b1,c3c4,g2g3,f2f3,a2a3,g2g4,f2f4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+You: b2c3 (score=-524)
+Opponent: f8e7
+You: c1g5 (score=-650)
+Opponent: e7g5
+You: h2h4 (score=-865)
+Opponent: g5h6
+You: d1h5 (score=-826)
+Opponent: c7f7
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:36:56.861 | INFO     | __main__:get_action:150 - response: <UCI>=h5f7
+2025-01-26 20:36:56.861 | INFO     | __main__:get_action:154 - Extracted move: h5f7
+<re.Match object; span=(0, 4), match='h5f7'>
+2025-01-26 20:36:56.861 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: h5f7
+2025-01-26 20:36:56.866 | INFO     | __main__:step:52 - White's move: h5f7 => Score: -833
+2025-01-26 20:36:56.966 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: e8f7
+2025-01-26 20:36:56.966 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:36:56.966 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+r . . . . . . r
+p p . . . k p p
+. . n p p . . b
+. . . . p . . .
+. . . . . . . P
+. . P . . . . .
+P . P . . P P .
+R . . . . R K .
+2025-01-26 20:36:56.966 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:36:56.966 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:36:56.966 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: g1h2,g1h1,f1e1,f1d1,f1c1,f1b1,a1e1,a1d1,a1c1,a1b1,h4h5,c3c4,g2g3,f2f3,a2a3,g2g4,f2f4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+You: b2c3 (score=-524)
+Opponent: f8e7
+You: c1g5 (score=-650)
+Opponent: e7g5
+You: h2h4 (score=-865)
+Opponent: g5h6
+You: d1h5 (score=-826)
+Opponent: c7f7
+You: h5f7 (score=-833)
+Opponent: e8f7
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:38:12.898 | INFO     | __main__:get_action:150 - response: <UCI>=a1e1
+2025-01-26 20:38:12.898 | INFO     | __main__:get_action:154 - Extracted move: a1e1
+<re.Match object; span=(0, 4), match='a1e1'>
+2025-01-26 20:38:12.899 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: a1e1
+2025-01-26 20:38:12.902 | INFO     | __main__:step:52 - White's move: a1e1 => Score: -842
+2025-01-26 20:38:13.003 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: a8d8
+2025-01-26 20:38:13.003 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:38:13.003 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+. . . r . . . r
+p p . . . k p p
+. . n p p . . b
+. . . . p . . .
+. . . . . . . P
+. . P . . . . .
+P . P . . P P .
+. . . . R R K .
+2025-01-26 20:38:13.003 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:38:13.003 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:38:13.003 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: g1h2,g1h1,e1e5,e1e4,e1e3,e1e2,e1d1,e1c1,e1b1,e1a1,h4h5,c3c4,g2g3,f2f3,a2a3,g2g4,f2f4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+You: b2c3 (score=-524)
+Opponent: f8e7
+You: c1g5 (score=-650)
+Opponent: e7g5
+You: h2h4 (score=-865)
+Opponent: g5h6
+You: d1h5 (score=-826)
+Opponent: c7f7
+You: h5f7 (score=-833)
+Opponent: e8f7
+You: a1e1 (score=-842)
+Opponent: a8d8
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:39:15.100 | INFO     | __main__:get_action:150 - response: <UCI>=h4h5
+2025-01-26 20:39:15.100 | INFO     | __main__:get_action:154 - Extracted move: h4h5
+<re.Match object; span=(0, 4), match='h4h5'>
+2025-01-26 20:39:15.100 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: h4h5
+2025-01-26 20:39:15.103 | INFO     | __main__:step:52 - White's move: h4h5 => Score: -875
+2025-01-26 20:39:15.203 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: h8f8
+2025-01-26 20:39:15.203 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:39:15.203 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+. . . r . r . .
+p p . . . k p p
+. . n p p . . b
+. . . . p . . P
+. . . . . . . .
+. . P . . . . .
+P . P . . P P .
+. . . . R R K .
+2025-01-26 20:39:15.203 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:39:15.203 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:39:15.203 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: g1h2,g1h1,e1e5,e1e4,e1e3,e1e2,e1d1,e1c1,e1b1,e1a1,c3c4,g2g3,f2f3,a2a3,g2g4,f2f4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+You: b2c3 (score=-524)
+Opponent: f8e7
+You: c1g5 (score=-650)
+Opponent: e7g5
+You: h2h4 (score=-865)
+Opponent: g5h6
+You: d1h5 (score=-826)
+Opponent: c7f7
+You: h5f7 (score=-833)
+Opponent: e8f7
+You: a1e1 (score=-842)
+Opponent: a8d8
+You: h4h5 (score=-875)
+Opponent: h8f8
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:40:23.731 | INFO     | __main__:get_action:150 - response: <UCI>=g2g3
+2025-01-26 20:40:23.731 | INFO     | __main__:get_action:154 - Extracted move: g2g3
+<re.Match object; span=(0, 4), match='g2g3'>
+2025-01-26 20:40:23.731 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: g2g3
+2025-01-26 20:40:23.735 | INFO     | __main__:step:52 - White's move: g2g3 => Score: -881
+2025-01-26 20:40:23.836 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: f7e7
+2025-01-26 20:40:23.836 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:40:23.836 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+. . . r . r . .
+p p . . k . p p
+. . n p p . . b
+. . . . p . . P
+. . . . . . . .
+. . P . . . P .
+P . P . . P . .
+. . . . R R K .
+2025-01-26 20:40:23.836 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:40:23.836 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:40:23.836 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: g1h2,g1g2,g1h1,e1e5,e1e4,e1e3,e1e2,e1d1,e1c1,e1b1,e1a1,g3g4,c3c4,f2f3,a2a3,f2f4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+You: b2c3 (score=-524)
+Opponent: f8e7
+You: c1g5 (score=-650)
+Opponent: e7g5
+You: h2h4 (score=-865)
+Opponent: g5h6
+You: d1h5 (score=-826)
+Opponent: c7f7
+You: h5f7 (score=-833)
+Opponent: e8f7
+You: a1e1 (score=-842)
+Opponent: a8d8
+You: h4h5 (score=-875)
+Opponent: h8f8
+You: g2g3 (score=-881)
+Opponent: f7e7
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:41:24.137 | INFO     | __main__:get_action:150 - response: <UCI>=g1h2
+2025-01-26 20:41:24.138 | INFO     | __main__:get_action:154 - Extracted move: g1h2
+<re.Match object; span=(0, 4), match='g1h2'>
+2025-01-26 20:41:24.138 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: g1h2
+2025-01-26 20:41:24.142 | INFO     | __main__:step:52 - White's move: g1h2 => Score: -910
+2025-01-26 20:41:24.242 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: h6d2
+2025-01-26 20:41:24.242 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:41:24.242 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+. . . r . r . .
+p p . . k . p p
+. . n p p . . .
+. . . . p . . P
+. . . . . . . .
+. . P . . . P .
+P . P b . P . K
+. . . . R R . .
+2025-01-26 20:41:24.242 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:41:24.242 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:41:24.243 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: h2h3,h2g2,h2h1,h2g1,f1h1,f1g1,e1e5,e1e4,e1e3,e1e2,e1d1,e1c1,e1b1,e1a1,h5h6,g3g4,c3c4,f2f3,a2a3,f2f4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+You: b2c3 (score=-524)
+Opponent: f8e7
+You: c1g5 (score=-650)
+Opponent: e7g5
+You: h2h4 (score=-865)
+Opponent: g5h6
+You: d1h5 (score=-826)
+Opponent: c7f7
+You: h5f7 (score=-833)
+Opponent: e8f7
+You: a1e1 (score=-842)
+Opponent: a8d8
+You: h4h5 (score=-875)
+Opponent: h8f8
+You: g2g3 (score=-881)
+Opponent: f7e7
+You: g1h2 (score=-910)
+Opponent: h6d2
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:42:24.365 | INFO     | __main__:get_action:150 - response: <UCI>=e1e5
+2025-01-26 20:42:24.365 | INFO     | __main__:get_action:154 - Extracted move: e1e5
+<re.Match object; span=(0, 4), match='e1e5'>
+2025-01-26 20:42:24.365 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: e1e5
+2025-01-26 20:42:24.368 | INFO     | __main__:step:52 - White's move: e1e5 => Score: -985
+2025-01-26 20:42:24.469 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: d6e5
+2025-01-26 20:42:24.469 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:42:24.469 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+. . . r . r . .
+p p . . k . p p
+. . n . p . . .
+. . . . p . . P
+. . . . . . . .
+. . P . . . P .
+P . P b . P . K
+. . . . . R . .
+2025-01-26 20:42:24.469 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:42:24.469 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:42:24.469 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: h2h3,h2g2,h2h1,h2g1,f1h1,f1g1,f1e1,f1d1,f1c1,f1b1,f1a1,h5h6,g3g4,c3c4,f2f3,a2a3,f2f4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+You: b2c3 (score=-524)
+Opponent: f8e7
+You: c1g5 (score=-650)
+Opponent: e7g5
+You: h2h4 (score=-865)
+Opponent: g5h6
+You: d1h5 (score=-826)
+Opponent: c7f7
+You: h5f7 (score=-833)
+Opponent: e8f7
+You: a1e1 (score=-842)
+Opponent: a8d8
+You: h4h5 (score=-875)
+Opponent: h8f8
+You: g2g3 (score=-881)
+Opponent: f7e7
+You: g1h2 (score=-910)
+Opponent: h6d2
+You: e1e5 (score=-985)
+Opponent: d6e5
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:43:26.206 | INFO     | __main__:get_action:150 - response: <UCI>=h5h6
+2025-01-26 20:43:26.206 | INFO     | __main__:get_action:154 - Extracted move: h5h6
+<re.Match object; span=(0, 4), match='h5h6'>
+2025-01-26 20:43:26.206 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: h5h6
+2025-01-26 20:43:26.210 | INFO     | __main__:step:52 - White's move: h5h6 => Score: -1027
+2025-01-26 20:43:26.311 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: d2h6
+2025-01-26 20:43:26.311 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:43:26.311 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+. . . r . r . .
+p p . . k . p p
+. . n . p . . b
+. . . . p . . .
+. . . . . . . .
+. . P . . . P .
+P . P . . P . K
+. . . . . R . .
+2025-01-26 20:43:26.311 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:43:26.311 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:43:26.311 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: h2h3,h2g2,h2h1,h2g1,f1h1,f1g1,f1e1,f1d1,f1c1,f1b1,f1a1,g3g4,c3c4,f2f3,a2a3,f2f4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+You: b2c3 (score=-524)
+Opponent: f8e7
+You: c1g5 (score=-650)
+Opponent: e7g5
+You: h2h4 (score=-865)
+Opponent: g5h6
+You: d1h5 (score=-826)
+Opponent: c7f7
+You: h5f7 (score=-833)
+Opponent: e8f7
+You: a1e1 (score=-842)
+Opponent: a8d8
+You: h4h5 (score=-875)
+Opponent: h8f8
+You: g2g3 (score=-881)
+Opponent: f7e7
+You: g1h2 (score=-910)
+Opponent: h6d2
+You: e1e5 (score=-985)
+Opponent: d6e5
+You: h5h6 (score=-1027)
+Opponent: d2h6
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:44:06.836 | INFO     | __main__:get_action:150 - response: <UCI>=h2h3
+2025-01-26 20:44:06.836 | INFO     | __main__:get_action:154 - Extracted move: h2h3
+<re.Match object; span=(0, 4), match='h2h3'>
+2025-01-26 20:44:06.836 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: h2h3
+2025-01-26 20:44:06.840 | INFO     | __main__:step:52 - White's move: h2h3 => Score: -1068
+2025-01-26 20:44:06.941 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: e5e4
+2025-01-26 20:44:06.941 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:44:06.941 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+. . . r . r . .
+p p . . k . p p
+. . n . p . . b
+. . . . . . . .
+. . . . p . . .
+. . P . . . P K
+P . P . . P . .
+. . . . . R . .
+2025-01-26 20:44:06.941 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:44:06.941 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:44:06.941 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: h3h4,h3g4,h3h2,h3g2,f1h1,f1g1,f1e1,f1d1,f1c1,f1b1,f1a1,g3g4,c3c4,f2f3,a2a3,f2f4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+You: b2c3 (score=-524)
+Opponent: f8e7
+You: c1g5 (score=-650)
+Opponent: e7g5
+You: h2h4 (score=-865)
+Opponent: g5h6
+You: d1h5 (score=-826)
+Opponent: c7f7
+You: h5f7 (score=-833)
+Opponent: e8f7
+You: a1e1 (score=-842)
+Opponent: a8d8
+You: h4h5 (score=-875)
+Opponent: h8f8
+You: g2g3 (score=-881)
+Opponent: f7e7
+You: g1h2 (score=-910)
+Opponent: h6d2
+You: e1e5 (score=-985)
+Opponent: d6e5
+You: h5h6 (score=-1027)
+Opponent: d2h6
+You: h2h3 (score=-1068)
+Opponent: e5e4
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:45:15.876 | INFO     | __main__:get_action:150 - response: <UCI>=g3g4
+2025-01-26 20:45:15.877 | INFO     | __main__:get_action:154 - Extracted move: g3g4
+<re.Match object; span=(0, 4), match='g3g4'>
+2025-01-26 20:45:15.877 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: g3g4
+2025-01-26 20:45:15.880 | INFO     | __main__:step:52 - White's move: g3g4 => Score: -1095
+2025-01-26 20:45:15.981 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: d8d2
+2025-01-26 20:45:15.981 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:45:15.981 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+. . . . . r . .
+p p . . k . p p
+. . n . p . . b
+. . . . . . . .
+. . . . p . P .
+. . P . . . . K
+P . P r . P . .
+. . . . . R . .
+2025-01-26 20:45:15.981 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:45:15.981 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:45:15.981 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: h3h4,h3g3,h3h2,h3g2,f1h1,f1g1,f1e1,f1d1,f1c1,f1b1,f1a1,g4g5,c3c4,f2f3,a2a3,f2f4,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+You: b2c3 (score=-524)
+Opponent: f8e7
+You: c1g5 (score=-650)
+Opponent: e7g5
+You: h2h4 (score=-865)
+Opponent: g5h6
+You: d1h5 (score=-826)
+Opponent: c7f7
+You: h5f7 (score=-833)
+Opponent: e8f7
+You: a1e1 (score=-842)
+Opponent: a8d8
+You: h4h5 (score=-875)
+Opponent: h8f8
+You: g2g3 (score=-881)
+Opponent: f7e7
+You: g1h2 (score=-910)
+Opponent: h6d2
+You: e1e5 (score=-985)
+Opponent: d6e5
+You: h5h6 (score=-1027)
+Opponent: d2h6
+You: h2h3 (score=-1068)
+Opponent: e5e4
+You: g3g4 (score=-1095)
+Opponent: d8d2
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:47:03.477 | INFO     | __main__:get_action:150 - response: <UCI>=f1h1
+2025-01-26 20:47:03.477 | INFO     | __main__:get_action:154 - Extracted move: f1h1
+<re.Match object; span=(0, 4), match='f1h1'>
+2025-01-26 20:47:03.477 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: f1h1
+2025-01-26 20:47:03.482 | INFO     | __main__:step:52 - White's move: f1h1 => Score: -1340
+2025-01-26 20:47:03.583 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: f8f2
+2025-01-26 20:47:03.583 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:47:03.583 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+. . . . . . . .
+p p . . k . p p
+. . n . p . . b
+. . . . . . . .
+. . . . p . P .
+. . P . . . . K
+P . P r . r . .
+. . . . . . . R
+2025-01-26 20:47:03.583 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:47:03.583 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:47:03.583 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: h3h4,h3g3,h1h2,h1g1,h1f1,h1e1,h1d1,h1c1,h1b1,h1a1,g4g5,c3c4,a2a3,a2a4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+You: b2c3 (score=-524)
+Opponent: f8e7
+You: c1g5 (score=-650)
+Opponent: e7g5
+You: h2h4 (score=-865)
+Opponent: g5h6
+You: d1h5 (score=-826)
+Opponent: c7f7
+You: h5f7 (score=-833)
+Opponent: e8f7
+You: a1e1 (score=-842)
+Opponent: a8d8
+You: h4h5 (score=-875)
+Opponent: h8f8
+You: g2g3 (score=-881)
+Opponent: f7e7
+You: g1h2 (score=-910)
+Opponent: h6d2
+You: e1e5 (score=-985)
+Opponent: d6e5
+You: h5h6 (score=-1027)
+Opponent: d2h6
+You: h2h3 (score=-1068)
+Opponent: e5e4
+You: g3g4 (score=-1095)
+Opponent: d8d2
+You: f1h1 (score=-1340)
+Opponent: f8f2
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:48:28.921 | INFO     | __main__:get_action:150 - response: <UCI>=h1h2
+2025-01-26 20:48:28.921 | INFO     | __main__:get_action:154 - Extracted move: h1h2
+<re.Match object; span=(0, 4), match='h1h2'>
+2025-01-26 20:48:28.922 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: h1h2
+2025-01-26 20:48:28.925 | INFO     | __main__:step:52 - White's move: h1h2 => Score: Mate in -2
+2025-01-26 20:48:28.935 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: f2f3
+2025-01-26 20:48:28.935 | INFO     | __main__:play_game_llm_vs_stockfish:194 -
+Final Board Position:
+2025-01-26 20:48:28.935 | INFO     | __main__:play_game_llm_vs_stockfish:195 -
+
+. . . . . . . .
+p p . . k . p p
+. . n . p . . b
+. . . . . . . .
+. . . . p . P .
+. . P . . r . K
+P . P r . . . R
+. . . . . . . .
+2025-01-26 20:48:28.935 | INFO     | __main__:play_game_llm_vs_stockfish:196 -
+Game Status:
+2025-01-26 20:48:28.935 | INFO     | __main__:play_game_llm_vs_stockfish:197 -
+Move History:
+2025-01-26 20:48:28.935 | INFO     | __main__:get_action:123 - prompt:
+        As a chess expert, your goal is to demonstrate your expertise by winning a game of chess. Your task is to strategize and play a game of chess with the intent of achieving victory. You will analyze your opponent's moves and your move to generate the best possible 'ONE' move. You are White.
+
+<think>
+Step 1: Assess the current board position, considering material balance, piece activity, All Valid moves, and control of key squares.
+Step 2: Identify potential threats from the opponent and opportunities for you.
+Step 3: Evaluate candidate moves, considering both immediate tactics and long-term strategy.
+Step 4: Select the move that maximizes your advantage while minimizing potential risks.
+</think>
+
+NOTE: Generate only 'ONE' valid move in UCI format (e.g., e2e4).
+
+
+ALL Valid Moves: h3h4
+HISTORY:
+You: e2e4 (score=36)
+Opponent: c7c5
+You: g1f3 (score=31)
+Opponent: b8c6
+You: d2d4 (score=17)
+Opponent: c5d4
+You: f3d4 (score=36)
+Opponent: e7e5
+You: d4b5 (score=10)
+Opponent: d7d6
+You: b5c7 (score=-451)
+Opponent: d8c7
+You: f1c4 (score=-553)
+Opponent: c8e6
+You: c4b3 (score=-519)
+Opponent: g8f6
+You: e1g1 (score=-516)
+Opponent: f6e4
+You: b3e6 (score=-513)
+Opponent: f7e6
+You: b1c3 (score=-524)
+Opponent: e4c3
+You: b2c3 (score=-524)
+Opponent: f8e7
+You: c1g5 (score=-650)
+Opponent: e7g5
+You: h2h4 (score=-865)
+Opponent: g5h6
+You: d1h5 (score=-826)
+Opponent: c7f7
+You: h5f7 (score=-833)
+Opponent: e8f7
+You: a1e1 (score=-842)
+Opponent: a8d8
+You: h4h5 (score=-875)
+Opponent: h8f8
+You: g2g3 (score=-881)
+Opponent: f7e7
+You: g1h2 (score=-910)
+Opponent: h6d2
+You: e1e5 (score=-985)
+Opponent: d6e5
+You: h5h6 (score=-1027)
+Opponent: d2h6
+You: h2h3 (score=-1068)
+Opponent: e5e4
+You: g3g4 (score=-1095)
+Opponent: d8d2
+You: f1h1 (score=-1340)
+Opponent: f8f2
+You: h1h2 (score=Mate in -2)
+Opponent: f2f3
+
+Output format example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move from valid moves>
+
+2025-01-26 20:48:47.033 | INFO     | __main__:get_action:150 - response: <UCI>=h3h4
+2025-01-26 20:48:47.033 | INFO     | __main__:get_action:154 - Extracted move: h3h4
+<re.Match object; span=(0, 4), match='h3h4'>
+2025-01-26 20:48:47.034 | INFO     | __main__:play_game_llm_vs_stockfish:182 - white_move: h3h4
+2025-01-26 20:48:47.037 | INFO     | __main__:step:52 - White's move: h3h4 => Score: Mate in -1
