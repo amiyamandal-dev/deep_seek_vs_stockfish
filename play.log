@@ -1,0 +1,395 @@
+2025-01-26 16:29:49.862 | INFO     | __main__:play_game_llm_vs_stockfish:180 - white_move: e2e4
+2025-01-26 16:29:49.963 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: c7c5
+
+Final Board Position:
+r n b q k b n r
+p p . p p p p p
+. . . . . . . .
+. . p . . . . .
+. . . . P . . .
+. . . . . . . .
+P P P P . P P P
+R N B Q K B N R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 16:29:49.964 | INFO     | __main__:get_action:129 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: g1h3,g1f3,g1e2,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,d1h5,d1g4,d1f3,d1e2,b1c3,b1a3,e4e5,h2h3,g2g3,f2f3,d2d3,c2c3,b2b3,a2a3,h2h4,g2g4,f2f4,d2d4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4
+Opponent: c7c5
+
+Output example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move what you have thought from valid moves>
+
+2025-01-26 16:30:34.997 | INFO     | __main__:get_action:135 - response: **Move: e4e5**
+
+This move is a powerful centralization of your queen, which strengthens your control over the board and puts significant pressure on the opponent's pieces. The queen can then be employed to attack multiple key squares or support further advances on other parts of the chessboard.
+2025-01-26 16:30:34.997 | INFO     | __main__:get_action:137 - Extracted move:**Move: e4e5**
+
+This move is a powerful centralization of your queen, which strengthens your control over the board and puts significant pressure on the opponent's pieces. The queen can then be employed to attack multiple key squares or support further advances on other parts of the chessboard.
+<re.Match object; span=(7, 12), match=' e4e5'>
+2025-01-26 16:30:34.997 | INFO     | __main__:play_game_llm_vs_stockfish:180 - white_move: e4e5
+2025-01-26 16:30:35.098 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: b8c6
+
+Final Board Position:
+r . b q k b n r
+p p . p p p p p
+. . n . . . . .
+. . p . P . . .
+. . . . . . . .
+. . . . . . . .
+P P P P . P P P
+R N B Q K B N R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 16:30:35.099 | INFO     | __main__:get_action:129 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: g1h3,g1f3,g1e2,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,d1h5,d1g4,d1f3,d1e2,b1c3,b1a3,e5e6,h2h3,g2g3,f2f3,d2d3,c2c3,b2b3,a2a3,h2h4,g2g4,f2f4,d2d4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4
+Opponent: c7c5
+You: e4e5
+Opponent: b8c6
+
+Output example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move what you have thought from valid moves>
+
+2025-01-26 16:31:21.253 | INFO     | __main__:get_action:135 - response: The optimal move is **h2h3**. This move allows you to castle kingside, develop your rook, and keep your king safe while supporting your pawn on e5. It's a solid, strategic choice that aligns well with central pressure and future development plans.
+2025-01-26 16:31:21.254 | INFO     | __main__:get_action:137 - Extracted move:The optimal move is **h2h3**. This move allows you to castle kingside, develop your rook, and keep your king safe while supporting your pawn on e5. It's a solid, strategic choice that aligns well with central pressure and future development plans.
+<re.Match object; span=(22, 26), match='h2h3'>
+2025-01-26 16:31:21.254 | INFO     | __main__:play_game_llm_vs_stockfish:180 - white_move: h2h3
+2025-01-26 16:31:21.355 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: c6e5
+
+Final Board Position:
+r . b q k b n r
+p p . p p p p p
+. . . . . . . .
+. . p . n . . .
+. . . . . . . .
+. . . . . . . P
+P P P P . P P .
+R N B Q K B N R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 16:31:21.355 | INFO     | __main__:get_action:129 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: h1h2,g1f3,g1e2,f1a6,f1b5,f1c4,f1d3,f1e2,e1e2,d1h5,d1g4,d1f3,d1e2,b1c3,b1a3,h3h4,g2g3,f2f3,d2d3,c2c3,b2b3,a2a3,g2g4,f2f4,d2d4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4
+Opponent: c7c5
+You: e4e5
+Opponent: b8c6
+You: h2h3
+Opponent: c6e5
+
+Output example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move what you have thought from valid moves>
+
+2025-01-26 16:31:37.975 | INFO     | __main__:get_action:135 - response: <UCI>=g2g4
+2025-01-26 16:31:37.975 | INFO     | __main__:get_action:137 - Extracted move:g2g4
+<re.Match object; span=(0, 4), match='g2g4'>
+2025-01-26 16:31:37.975 | INFO     | __main__:play_game_llm_vs_stockfish:180 - white_move: g2g4
+2025-01-26 16:31:38.078 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: d7d5
+
+Final Board Position:
+r . b q k b n r
+p p . . p p p p
+. . . . . . . .
+. . p p n . . .
+. . . . . . P .
+. . . . . . . P
+P P P P . P . .
+R N B Q K B N R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 16:31:38.078 | INFO     | __main__:get_action:129 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: h1h2,g1f3,g1e2,f1a6,f1b5,f1c4,f1d3,f1g2,f1e2,e1e2,d1f3,d1e2,b1c3,b1a3,g4g5,h3h4,f2f3,d2d3,c2c3,b2b3,a2a3,f2f4,d2d4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4
+Opponent: c7c5
+You: e4e5
+Opponent: b8c6
+You: h2h3
+Opponent: c6e5
+You: g2g4
+Opponent: d7d5
+
+Output example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move what you have thought from valid moves>
+
+2025-01-26 16:31:50.714 | INFO     | __main__:get_action:135 - response: <UCI>=h3h4
+2025-01-26 16:31:50.715 | INFO     | __main__:get_action:137 - Extracted move:h3h4
+<re.Match object; span=(0, 4), match='h3h4'>
+2025-01-26 16:31:50.715 | INFO     | __main__:play_game_llm_vs_stockfish:180 - white_move: h3h4
+2025-01-26 16:31:50.817 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: c8g4
+
+Final Board Position:
+r . . q k b n r
+p p . . p p p p
+. . . . . . . .
+. . p p n . . .
+. . . . . . b P
+. . . . . . . .
+P P P P . P . .
+R N B Q K B N R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 16:31:50.817 | INFO     | __main__:get_action:129 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: h1h3,h1h2,g1h3,g1f3,g1e2,f1a6,f1b5,f1c4,f1h3,f1d3,f1g2,f1e2,d1g4,d1f3,d1e2,b1c3,b1a3,h4h5,f2f3,d2d3,c2c3,b2b3,a2a3,f2f4,d2d4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4
+Opponent: c7c5
+You: e4e5
+Opponent: b8c6
+You: h2h3
+Opponent: c6e5
+You: g2g4
+Opponent: d7d5
+You: h3h4
+Opponent: c8g4
+
+Output example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move what you have thought from valid moves>
+
+2025-01-26 16:32:38.678 | INFO     | __main__:get_action:135 - response: The optimal move is **d1g4**. This places your bishop on g4, controlling key central squares and applying tactical pressure against the opponent's knight on e5, while also preparing for future strategic maneuvers.
+2025-01-26 16:32:38.678 | INFO     | __main__:get_action:137 - Extracted move:The optimal move is **d1g4**. This places your bishop on g4, controlling key central squares and applying tactical pressure against the opponent's knight on e5, while also preparing for future strategic maneuvers.
+<re.Match object; span=(22, 26), match='d1g4'>
+2025-01-26 16:32:38.678 | INFO     | __main__:play_game_llm_vs_stockfish:180 - white_move: d1g4
+2025-01-26 16:32:38.780 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: e5g4
+
+Final Board Position:
+r . . q k b n r
+p p . . p p p p
+. . . . . . . .
+. . p p . . . .
+. . . . . . n P
+. . . . . . . .
+P P P P . P . .
+R N B . K B N R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 16:32:38.780 | INFO     | __main__:get_action:129 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: h1h3,h1h2,g1h3,g1f3,g1e2,f1a6,f1b5,f1c4,f1h3,f1d3,f1g2,f1e2,e1e2,e1d1,b1c3,b1a3,h4h5,f2f3,d2d3,c2c3,b2b3,a2a3,f2f4,d2d4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4
+Opponent: c7c5
+You: e4e5
+Opponent: b8c6
+You: h2h3
+Opponent: c6e5
+You: g2g4
+Opponent: d7d5
+You: h3h4
+Opponent: c8g4
+You: d1g4
+Opponent: e5g4
+
+Output example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move what you have thought from valid moves>
+
+2025-01-26 16:33:06.062 | INFO     | __main__:get_action:135 - response: <UCI>=e1e2
+2025-01-26 16:33:06.063 | INFO     | __main__:get_action:137 - Extracted move:e1e2
+<re.Match object; span=(0, 4), match='e1e2'>
+2025-01-26 16:33:06.063 | INFO     | __main__:play_game_llm_vs_stockfish:180 - white_move: e1e2
+2025-01-26 16:33:06.164 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: d8b6
+
+Final Board Position:
+r . . . k b n r
+p p . . p p p p
+. q . . . . . .
+. . p p . . . .
+. . . . . . n P
+. . . . . . . .
+P P P P K P . .
+R N B . . B N R
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 16:33:06.164 | INFO     | __main__:get_action:129 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: e2f3,e2d3,e2e1,e2d1,h1h3,h1h2,g1h3,g1f3,f1h3,f1g2,b1c3,b1a3,h4h5,f2f3,d2d3,c2c3,b2b3,a2a3,f2f4,d2d4,c2c4,b2b4,a2a4
+HISTORY:
+You: e2e4
+Opponent: c7c5
+You: e4e5
+Opponent: b8c6
+You: h2h3
+Opponent: c6e5
+You: g2g4
+Opponent: d7d5
+You: h3h4
+Opponent: c8g4
+You: d1g4
+Opponent: e5g4
+You: e1e2
+Opponent: d8b6
+
+Output example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move what you have thought from valid moves>
+
+2025-01-26 16:34:22.781 | INFO     | __main__:get_action:135 - response: The optimal move is to promote a pawn on h1 to h3, which can either be a rook or queen. This protects your king and sets up a strong position for further development.
+
+**Answer:** Promote a pawn from h1 to h3.
+
+In notation: $h1h3$
+2025-01-26 16:34:22.781 | INFO     | __main__:get_action:137 - Extracted move:The optimal move is to promote a pawn on h1 to h3, which can either be a rook or queen. This protects your king and sets up a strong position for further development.
+
+**Answer:** Promote a pawn from h1 to h3.
+
+In notation: $h1h3$
+<re.Match object; span=(226, 230), match='h1h3'>
+2025-01-26 16:34:22.782 | INFO     | __main__:play_game_llm_vs_stockfish:180 - white_move: h1h3
+2025-01-26 16:34:22.883 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: c5c4
+
+Final Board Position:
+r . . . k b n r
+p p . . p p p p
+. q . . . . . .
+. . . p . . . .
+. . p . . . n P
+. . . . . . . R
+P P P P K P . .
+R N B . . B N .
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 16:34:22.883 | INFO     | __main__:get_action:129 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: h3g3,h3f3,h3e3,h3d3,h3c3,h3b3,h3a3,h3h2,h3h1,e2f3,e2e1,e2d1,g1f3,f1g2,b1c3,b1a3,h4h5,f2f3,d2d3,c2c3,b2b3,a2a3,f2f4,d2d4,b2b4,a2a4
+HISTORY:
+You: e2e4
+Opponent: c7c5
+You: e4e5
+Opponent: b8c6
+You: h2h3
+Opponent: c6e5
+You: g2g4
+Opponent: d7d5
+You: h3h4
+Opponent: c8g4
+You: d1g4
+Opponent: e5g4
+You: e1e2
+Opponent: d8b6
+You: h1h3
+Opponent: c5c4
+
+Output example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move what you have thought from valid moves>
+
+2025-01-26 16:34:45.375 | INFO     | __main__:get_action:135 - response: <UCI>=e2e1
+2025-01-26 16:34:45.375 | INFO     | __main__:get_action:137 - Extracted move:e2e1
+<re.Match object; span=(0, 4), match='e2e1'>
+2025-01-26 16:34:45.375 | INFO     | __main__:play_game_llm_vs_stockfish:180 - white_move: e2e1
+2025-01-26 16:34:45.388 | INFO     | __main__:play_game_llm_vs_stockfish:190 - black_move: b6f2
+
+Final Board Position:
+r . . . k b n r
+p p . . p p p p
+. . . . . . . .
+. . . p . . . .
+. . p . . . n P
+. . . . . . . R
+P P P P . q . .
+R N B . K B N .
+
+Game Status: ONGOING
+
+Move History:
+2025-01-26 16:34:45.388 | INFO     | __main__:get_action:129 - prompt: As a chess expert, your goal is to demonstrate your expertise by winning a game of chess.
+Your task is to strategize and play a game of chess with the intent of achieving victory.
+You are White.
+NOTE:- generate only 'ONE' valid move.
+
+ALL Valid Moves: e1d1
+HISTORY:
+You: e2e4
+Opponent: c7c5
+You: e4e5
+Opponent: b8c6
+You: h2h3
+Opponent: c6e5
+You: g2g4
+Opponent: d7d5
+You: h3h4
+Opponent: c8g4
+You: d1g4
+Opponent: e5g4
+You: e1e2
+Opponent: d8b6
+You: h1h3
+Opponent: c5c4
+You: e2e1
+Opponent: b6f2
+
+Output example:
+<UCI>=e2e4
+<UCI>=h2h3
+<UCI>=<best move what you have thought from valid moves>
+
+2025-01-26 16:35:46.746 | INFO     | __main__:get_action:135 - response: The optimal move for White in this position is to advance the pawn from e2 to d1. This captures control of the central files and prepares for further offensive actions, supporting both kingside and queenside advances.
+
+**Answer:** \boxed{e2d1}
+2025-01-26 16:35:46.747 | INFO     | __main__:get_action:137 - Extracted move:The optimal move for White in this position is to advance the pawn from e2 to d1. This captures control of the central files and prepares for further offensive actions, supporting both kingside and queenside advances.
+
+**Answer:** \boxed{e2d1}
+<re.Match object; span=(238, 242), match='e2d1'>
+2025-01-26 16:35:46.747 | INFO     | __main__:play_game_llm_vs_stockfish:180 - white_move: e2d1
